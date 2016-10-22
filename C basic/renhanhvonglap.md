@@ -91,7 +91,7 @@ Cú pháp nhãn: nhan : lệnh;
 
 	>- Trong thân for có thể sử dụng lệnh continue để chuyển đến đầu vòng lặp (bỏ qua các câu lệnh còn lại trong thân).
  
-	**Vi dụ**
+	**Ví dụ**
 	```` #include <stdio.h>
 	int i = 0;
 	void main(){
@@ -107,6 +107,48 @@ Cú pháp nhãn: nhan : lệnh;
 	````
 	> Kết quả
 	0 1 2 3 4 5 6 7 8 9
-
-	````Déo biết ghi gì
+	
+	2.2 Lệnh while
+	````while(<Điều kiện>){
+	<Khối lệnh>
+	}
 	````
+	![enter image description here](https://www.stdio.vn/statics/external_data/files/pages/articles/2015/365/content/ss_1.png)
+	**Ví dụ:**
+	````#include <stdio.h>
+		#define PASS "cmmr" 
+	int main(){
+    char pass[100];
+    /* Ham strcmp  tra ve ket qua la 0 khi 2 chuoi bang nhau  */
+    while(strcmp(pass, PASS) != 0) { 
+        printf("Nhap pass: ");
+        gets(pass);
+    }
+    printf("Mat khau dung");
+    return 0;
+}
+	````
+	2.3 Lệnh do while
+	````do{
+			<khối lệnh>;
+	}while(Điều kiện);
+	````
+	![enter image description here](https://voer.edu.vn/file/24497)
+	**Ví dụ:**
+	````#include <stdio.h>
+int main (){
+   int a = 10;
+   do{
+       printf("Gia tri cua a la: %d\n", a);
+       a = a + 1;
+   }while( a < 15 );
+   return 0;
+}
+	````
+	>Kết quả
+	Gia tri cua a la: 10
+	Gia tri cua a la: 11
+	Gia tri cua a la: 12
+	Gia tri cua a la: 13
+	Gia tri cua a la: 14
+	
