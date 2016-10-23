@@ -1,59 +1,59 @@
-## **M?NG**
-1. Kh�i ni?n
+## **MẢNG**
+1. Khái niện
 	
-    * L� m?t t?p h?p nhi?u bi?n c� c�ng ki?u d? li?u v� c�ng t�n, khi d� m?i ph?n t? c?a m?ng du?c
-truy xu?t th�ng qua ch? s?.
+    * Là một tập hợp nhiều biến có cùng kiểu dữ liệu và cùng tên, khi đó mỗi phần tử của mảng được
+truy xuất thông qua chỉ số.
 
-2. C� ph�p
+2. Cú pháp
 
 ```
-<ki?u d? li?u> <t�n m?ng> <Danh s�ch c�c chi?u c?a m?ng>;
+<kiểu dữ liệu> <tên mảng> <Danh sách các chiều của mảng>;
 ```
->V� d?: 
->- int array1d[10], array2d[2][6]; <M?ng array1d c� 10 ph?n t?, m?ng array2d l� m?ng 2 chi?u c� 12 ph?n t? d?u thu?c ki?u int>
+>Ví dụ: 
+>- int array1d[10], array2d[2][6]; <Mảng array1d có 10 phần tử, mảng array2d là mảng 2 chiều có 12 phần tử đều thuộc kiểu int>
 
-* Ch? s? c?a m?ng ph?i l� m?t gi� tr? ki?u int kh�ng vu?t qua k�ch thu?c c?a m?ng, ch? s?
-c?a m?ng b?t d?u t? 0.
-* Ch? l?y du?c d?a ch? c?a c�c ph?n t? thu?c m?ng m?t chi?u th�ng qua to�n t? & theo c�
-ph�p: &t�n_bi?n[i] (i l� ch? s? c?a m?ng). 
-* `Ch� �:` T�n c?a m?ng s? ch?a d?a ch? d?u c?a m?ng,v� d?: c� int a[10] th� a=&a[0]
+* Chỉ số của mảng phải là một giá trị kiểu int không vượt qua kích thước của mảng, chỉ số
+của mảng bắt đầu từ 0.
+* Chỉ lấy được địa chỉ của các phần tử thuộc mảng một chiều thông qua toán tử & theo cú
+pháp: &tên_biến[i] (i là chỉ số của mảng). 
+* `Chú ý:` Tên của mảng sẽ chứa địa chỉ đầu của mảng,ví dụ: có int a[10] thì a=&a[0]
 
-3. Nh?p xu?t
+3. Nhập xuất
 ```
 #include <stdio.h>
 void main(){
 int a[5] = {1, 2, 3, 4, 5};
 int i =0;
-printf("D�y c�: \n")
+printf("Dãy có: \n")
 for(i ; i<5; i++){
 printf("a[%d] = %3d\t", i, a[i]);
 }
 }
 ```
-> K?t qu?:
+> Kết quả:
 >
-> D�y c�:
+> Dãy có:
 > a[1] = 1	a[2] = 2	a[3] = 3	a[4] = 4	a[5] = 5
 
 
 
-* �a chi?u
+* Đa chiều
 ```
 # include <stdio.h>
 void main (){
 int temp,a[3][3];
 int i,j;
-/*Nh?p d? li?u */
+/*Nhập dữ liệu */
 for (i=0;i<3;i++)
 for (j=0;j<3;j++)
 {
 printf("\na[%d][%d]",i,j);
-scanf("%f",&temp); /*Nh?p gi�n ti?p
-th�ng qua bi?n temp*/
-a[i][j]=temp; /*G�n gi� tr? c?a temp
-cho ph?n t? m?ng*/
+scanf("%f",&temp); /*Nhập gián tiếp
+thông qua biến temp*/
+a[i][j]=temp; /*Gán giá trị của temp
+cho phần tử mảng*/
 }
-/*�ua gi� tr? c�c ph?n t? ra m�n h�nh*/
+/*Ðưa giá trị các phần tử ra màn hình*/
 for (i=0;i<3;i++)
 {
 printf("\n");
@@ -62,7 +62,7 @@ printf("%.2f ",a[i][j]);
 }
 }
 ```
-* Bi?n d?i m?ng 2 chi?u th�nh m?t chi?u
+* Biến đổi mảng 2 chiều thành một chiều
 ```
 void chuyen21(a[m][n], b[], ){
 	int i = 0; j =0;
