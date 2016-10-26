@@ -1,7 +1,22 @@
 ## **CON TRỎ**
 
+### Mục Lục
+
+[1. Khái niệm](#kn)
+
+- [1.1 Địa đị chỉ của biến](#dc)
+- [1.2 Con trỏ](#cn)
+
+[2. Khai báo](#kb)
+
+[3. Bộ định tính const với con trỏ](#bd)
+
+---
+
+<a name="kn"></a>
 ### 1. Khái niện
 
+<a name="dc"></a>
 ##### 1.1 Địa chỉ của biến
 
 * Xét khai báo: 
@@ -23,10 +38,12 @@
 	cho ta địa chỉ của biến x.
 	```
 	
+<a name="cn"></a>	
 ##### 1.2 Con trỏ
 
 	Là một loại biến dùng để lưu địa chỉ, mỗi loại địa chỉ sẽ có một kiểu con trỏ tương ứng (phụ thuộc vào loại dữ liệu lưu trữ trong địa chỉ đó).
-	
+
+<a name="kb"></a>
 ### 2. Khai báo
 
 	```
@@ -55,6 +72,7 @@
     >
     > Mọi thành phần của cùng một khai báo (biến, phần tử mảng, hàm, con trỏ) khi xuất 		hiện trong biểu thức đều cho cùng một kiểu giá trị.
 
+<a name="bd"></a>
 ### 3. Bộ định tính const với con trỏ
 
 	`const` dùng để: 
