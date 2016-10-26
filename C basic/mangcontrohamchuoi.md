@@ -400,19 +400,20 @@
 
 <a name=51></a>
 ##### 5.1 Mảng các con trỏ
-	* Khai báo mảng con trỏ
+	Khai báo mảng con trỏ
 	```
 	type *pointer_array[size];
 	```
 	ví dụ:
+	
 	```
 	#include <stdio.h>
-#include <string.h>/*Khai bao cac ham thao tac tren xau*/
-#include <alloc.h> /*Khai bao cac ham cap phat bo nho dong*/
-#define MAXLINES 100 /*Toi da co 100 ten*/
-#define MAXLEN 20 /*Ten dai toi da 20 ky tu*/
-void main()
-{
+	#include <string.h>/*Khai bao cac ham thao tac tren xau*/
+	#include <alloc.h> /*Khai bao cac ham cap phat bo nho dong*/
+	#define MAXLINES 100 /*Toi da co 100 ten*/
+	#define MAXLEN 20 /*Ten dai toi da 20 ky tu*/
+	void main()
+	{
 	char *st
 	rlist[MAXLINES];
 	char name[MAXLEN],*p;
