@@ -346,9 +346,10 @@
 ##### 4.1 Khai báo
 
 	Trong một chương trình nếu chúng ta có sử dụng chuỗi ký tự, thì máy sẽ cung cấp một vùng nhớ cho một mảng kiểu char
-đủ lớn để lưu các ký tự của chuỗi ký tự này và ký tự \0 ở cuối. Khi
-đó bản thân chuỗi ký tự này là một hằng địa chỉ. Nó chứa địa chỉ đầu của mảng lưu trữ nó.
+	đủ lớn để lưu các ký tự của chuỗi ký tự này và ký tự \0 ở cuối. Khi
+	đó bản thân chuỗi ký tự này là một hằng địa chỉ. Nó chứa địa chỉ đầu của mảng lưu trữ nó.
 	Ví dụ:
+	
 	```
 	#include <stdio.h>
 	char string[] = "Hello";
