@@ -35,16 +35,16 @@
 <a name="11"></a>
 ##### 1.1 Hàm có đối con trỏ (tham chiếu)
 
-	Nếu đối của hàm là con trỏ kiểu int (float, double,...) thì tham số thức thức tương ứng phải là địa chỉ của biến kiểu int (float, double,...). Khi đó địa chỉ của biến được truyền cho đối con trỏ tương ứng. Do đã biết địa chỉ của biến, nên ta có thể gán cho nó một giá trị mới bằng cánh sử  dụng các câu lệnh thích hợp trong thân hàm.
+	Nếu đối của hàm là con trỏ kiểu int (float, double,...) thì tham sthức thức tương ứng phải là địa chỉ của biến kiểu int (float, double,...). Khi đó địa chỉ của biến được truyền cho đối con trỏ tương ứng. Do đã biết địa chỉ của biến, nên ta có thể gán cho nó một giá trị mới bằng cánh sử  dụng các câu lệnh thích hợp trong thân hàm.
 	
 <a name="12"></a>
 ##### 1.2 khi nào sử  dụng đối con trỏ  
 
-	`Khi muốn bảo lưu lại kết quả tính toán được của các đối số  trong hàm` để sử dụng cho chương trình gọi hàm có đối số thì chúng ta phải khai báo đối  số của hàm là tham chiếu (con trỏ hay dạng địa chỉ).
+	Khi muốn bảo lưu lại kết quả tính toán được của các đối số  trong hàm` để sử dụng cho chương trình gọi hàm có đối số thì chúng ta phải khai báo đối  số của hàm là tham chiếu (con trỏ hay dạng địa chỉ).
 	
 	Ví dụ:
 	
-	````
+	```
 	# include <stdio.h>
 	#include <conio.h>
 	int a,b;
@@ -82,7 +82,7 @@
 	\
 	n",*a,*b);
 	}
-	````
+	```
 
 <a name="2"></a>
 ### 2. MẢNG VÀ CON TRỎ
