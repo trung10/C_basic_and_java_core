@@ -22,6 +22,7 @@
 	&x
 	cho ta địa chỉ của biến x.
 	```
+	
 ##### 1.2 Con trỏ
 
 	Là một loại biến dùng để lưu địa chỉ, mỗi loại địa chỉ sẽ có một kiểu con trỏ tương ứng (phụ thuộc vào loại dữ liệu lưu trữ trong địa chỉ đó).
