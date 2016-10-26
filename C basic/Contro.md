@@ -2,7 +2,7 @@
 
 ### 1. Khái niện
 
-#####1.1 Địa chỉ của biến
+##### 1.1 Địa chỉ của biến
 
 * Xét khai báo: 
 	```
