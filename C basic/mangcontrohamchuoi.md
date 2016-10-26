@@ -43,7 +43,8 @@
 	`Khi muốn bảo lưu lại kết quả tính toán được của các đối số  trong hàm` để sử dụng cho chương trình gọi hàm có đối số thì chúng ta phải khai báo đối  số của hàm là tham chiếu (con trỏ hay dạng địa chỉ).
 	
 	Ví dụ:
-	```
+	
+	````
 	# include <stdio.h>
 	#include <conio.h>
 	int a,b;
@@ -81,7 +82,7 @@
 	\
 	n",*a,*b);
 	}
-	```
+	````
 
 <a name="2"></a>
 ### 2. MẢNG VÀ CON TRỎ
