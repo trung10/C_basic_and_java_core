@@ -6,7 +6,7 @@
 
 [2. Cú pháp](#2)
 
-[3. Nhập xuất][#3]
+[3. Nhập xuất](#3)
 
 <a name="1"></a>
 ###1. Khái niện
