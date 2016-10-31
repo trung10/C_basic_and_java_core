@@ -1,14 +1,26 @@
 ## **MẢNG**
-1. Khái niện
+
+### Mục lục
+
+[1. Khái niện](#1)
+
+[2. Cú pháp](#2)
+
+[3. Nhập xuất][#3]
+
+<a name="1"></a>
+###1. Khái niện
 	
     * Là một tập hợp nhiều biến có cùng kiểu dữ liệu và cùng tên, khi đó mỗi phần tử của mảng được
 truy xuất thông qua chỉ số.
 
-2. Cú pháp
+<a name="2"></a>
+###2. Cú pháp
 
 ```
 <kiểu dữ liệu> <tên mảng> <Danh sách các chiều của mảng>;
 ```
+
 >Ví dụ: 
 >- int array1d[10], array2d[2][6]; <Mảng array1d có 10 phần tử, mảng array2d là mảng 2 chiều có 12 phần tử đều thuộc kiểu int>
 
@@ -18,7 +30,11 @@ của mảng bắt đầu từ 0.
 pháp: &tên_biến[i] (i là chỉ số của mảng). 
 * `Chú ý:` Tên của mảng sẽ chứa địa chỉ đầu của mảng,ví dụ: có int a[10] thì a=&a[0]
 
-3. Nhập xuất
+<a name="3"></a>
+###3. Nhập xuất
+
+* Một chiều
+
 ```
 #include <stdio.h>
 void main(){
@@ -38,6 +54,7 @@ printf("a[%d] = %3d\t", i, a[i]);
 
 
 * Đa chiều
+
 ```
 # include <stdio.h>
 void main (){
