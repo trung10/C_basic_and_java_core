@@ -131,7 +131,8 @@ goto nhãn;
  
 **Ví dụ**
 
-``` #include <stdio.h>
+``` 
+#include <stdio.h>
 	int i = 0;
 	void main(){
 	int  = 0;
@@ -182,11 +183,12 @@ goto nhãn;
 	do{
 			<khối lệnh>;
 	}while(Điều kiện);
-	````
+```
 
 **Ví dụ:**
 
-	````#include <stdio.h>
+```
+#include <stdio.h>
 int main (){
    int a = 10;
    do{
