@@ -35,14 +35,14 @@
 <a name="11"></a>
 ##### 1.1 Hàm có đối con trỏ (tham chiếu)
 
-	Nếu đối của hàm là con trỏ kiểu int (float, double,...) thì tham sthức thức tương ứng phải là địa chỉ của biến kiểu int (float, double,...). Khi đó địa chỉ của biến được truyền cho đối con trỏ tương ứng. Do đã biết địa chỉ của biến, nên ta có thể gán cho nó một giá trị mới bằng cánh sử  dụng các câu lệnh thích hợp trong thân hàm.
+Nếu đối của hàm là con trỏ kiểu int (float, double,...) thì tham sthức thức tương ứng phải là địa chỉ của biến kiểu int (float, double,...). Khi đó địa chỉ của biến được truyền cho đối con trỏ tương ứng. Do đã biết địa chỉ của biến, nên ta có thể gán cho nó một giá trị mới bằng cánh sử  dụng các câu lệnh thích hợp trong thân hàm.
 	
 <a name="12"></a>
 ##### 1.2 khi nào sử  dụng đối con trỏ  
 
-	Khi muốn bảo lưu lại kết quả tính toán được của các đối số  trong hàm` để sử dụng cho chương trình gọi hàm có đối số thì chúng ta phải khai báo đối  số của hàm là tham chiếu (con trỏ hay dạng địa chỉ).
+Khi muốn bảo lưu lại kết quả tính toán được của các đối số  trong hàm để sử dụng cho chương trình gọi hàm có đối số thì chúng ta phải khai báo đối  số của hàm là tham chiếu (con trỏ hay dạng địa chỉ).
 	
-	Ví dụ:
+* Ví dụ:
 	
 	```
 	# include <stdio.h>
@@ -51,36 +51,26 @@
 	void swap(int *a, int *b);
 	void main () /* Ham chinh */
 	{
-	a=3; b=7;
-	printf("
-	\
-	n Truoc khi goi ham: ")
-	printf("A= %d ",a);
-	printf("B= %d ",b);
-	swap(&a,&b);
-	/*Khi tham số hình thức là con trỏ thì 
-	tham số thực phải là con trỏ (dạng địa chỉ) */
-	printf("Sau khi 
-	goi ham: A = %d B= %d 
-	\
-	n",a,b);
-	getch();
-	}
-	/*
-	a,b là hai tham số vừa vào vừa ra, và sử dụng kiểu 
-	con trỏ
-	*/
-	void swap(int *a, int *b)
-	{
-	int temp ;
-	temp=*a;
-	*a=*b;
-	*b=temp;
-	printf("
-	\
-	nTrong ham swap A= %d B= %d 
-	\
-	n",*a,*b);
+		a=3; b=7;
+		printf("\n Truoc khi goi ham: ")
+		printf("A= %d ",a);
+		printf("B= %d ",b);
+		swap(&a,&b);
+		/*Khi tham số hình thức là con trỏ thì tham số thực phải là con trỏ (dạng địa chỉ) */
+		printf("Sau khi goi ham: A = %d B= %d \n",a,b);
+		getch();
+		}
+		/*
+		a,b là hai tham số vừa vào vừa ra, và sử dụng kiểu 
+		con trỏ
+		*/
+		void swap(int *a, int *b)
+		{
+		int temp ;
+		temp=*a;
+		*a=*b;
+		*b=temp;
+		printf("\nTrong ham swap A= %d B= %d \n",*a,*b);
 	}
 	```
 
@@ -90,8 +80,8 @@
 <a name="21"></a>
 ##### 2.1 Con trỏ và mảng 1 chiều
 
-	Con trỏ p và p trỏ vào phần tử thứ k của mảng a thì p+i sẽ
-	trỏ đến phần tử  thứ k+i của mảng a.
+Con trỏ p và p trỏ vào phần tử thứ k của mảng a thì p+i sẽ trỏ đến phần tử  thứ k+i của mảng a.
+
 	```
 	#include <stdio.h>
 	void main()
@@ -108,11 +98,7 @@
 <a name="22"></a>	
 ##### 2.2 Con trỏ và mảng 2 chiều
 
-	Việc xử lý mảng nhiều chiều phức tạp hơn so với mảng một 	chiều. Không phải mọi qui tắc đúng đối với mảng một 
-	chiều 
-	đều có thể đem ra áp dụng đối với mảng nhiều chiều. Phép 	toán lấy địa chỉ nói chung không dùng được đối với các 		thành phần của mảng nhiều chiều (trừ trường hợp mảng hai 	chiều các số nguyên). Xét chương trình sau với ý định 
-	nhập 		
-	số liệu cho ma trận thực.
+Việc xử lý mảng nhiều chiều phức tạp hơn so với mảng một chiều. Không phải mọi qui tắc đúng đối với mảng một chiều đều có thể đem ra áp dụng đối với mảng nhiều chiều. Phép toán lấy địa chỉ nói chung không dùng được đối với các thành phần của mảng nhiều chiều (trừ trường hợp mảng hai chiều các số nguyên). Xét chương trình sau với ý định nhập số liệu cho ma trận thực.
 	
 	```
 	#include <stdio.h>
@@ -138,17 +124,7 @@
 	}
 	}
 	```
-	Để ý rằng, a là một hằng con trỏ trỏ đến các dòng của một 	ma trân hai chiều, vì vậy a trỏ đến dòng thứ nhất a+1 trỏ 
-	đến dòng thứ hai a+2 trỏ đến dòng thứ ba.v.v. Ðể tính
-	toán 
-	được địa chỉ của phần tử ở dòng i cột j chúng ta phải dùng 
-	phép chuyển đổi kiểu bắt buộc đối với a: (float * )a, 		đây là con trỏ trỏ đến thành phần a[0][0] của ma trận. Và 	vì vậy thành phần a[i][j] sẽ có địa chỉ là (float *a)
-	+i*+j. Một cách tổng quát, nếu mảng có kiểu type và có 		kích thước các chiều tương ứng là n1,n2,..,nk (Giả sử
-	mảng 
-	a có k chiều). Ðịa chỉ của thành phần a[0]..[0] (k chỉ số 0)
-	là (type *)a, và địa chỉ của a[i1][i2]...[ik] được tính
-	như sau *(a + n*i + k).
-
+Để ý rằng, a là một hằng con trỏ trỏ đến các dòng của một ma trân hai chiều, vì vậy a trỏ đến dòng thứ nhất a+1 trỏ đến dòng thứ hai a+2 trỏ đến dòng thứ ba.v.v. Ðể tính toán được địa chỉ của phần tử ở dòng i cột j chúng ta phải dùng phép chuyển đổi kiểu bắt buộc đối với a: (float * )a,đây là con trỏ trỏ đến thành phần a[0][0] của ma trận. Và vì vậy thành phần a[i][j] sẽ có địa chỉ là (float *a)+i*+j. Một cách tổng quát, nếu mảng có kiểu type và có kích thước các chiều tương ứng là n1,n2,..,nk (Giả sử mảng a có k chiều). Ðịa chỉ của thành phần a[0]..[0] (k chỉ số 0) là (type *)a, và địa chỉ của a[i1][i2]...[ik] được tính như sau *(a + n*i + k).
 
 <a name="3"></a>
 ### 3. HÀM VÀ MẢNG
@@ -156,10 +132,8 @@
 <a name="31"></a>
 ##### 3.1 Hàm và mảng một chiều
 
-	Nếu tham số thực là tên mảng a (một chiều) kiểu in
-	(float, double,...) thì đối pa tương ứng cần phải là môt 
-	con trỏ kiểu int (float, double,...). Ðối pa có thể 
-	khaibáo theo hai cách:
+Nếu tham số thực là tên mảng a (một chiều) kiểu in (float, double,...) thì đối pa tương ứng cần phải là môt con trỏ kiểu int (float, double,...). Ðối pa có thể  khaibáo theo hai cách:
+
 	```
 	//Kiểu con trỏ
 	int *pa;
@@ -170,7 +144,8 @@
 	float pa[];
 	double pa[];
 	```
-	Ví dụ:
+Ví dụ:
+
 	```
 		#include <stdio.h>
 	/*Dưới
@@ -266,45 +241,37 @@
 	", *(pa+2));
 	}
 	```
-	Bôn hàm trên đều cho ra kêt quả như nhau.
+	
+Bôn hàm trên đều cho ra kêt quả như nhau.
 
 
 <a name="32"></a>
 ##### 3.2 Hàm và mảng 2 chiều
 
-	Giả sử a là mảng hai chiều:
-	float a[50][30];
-	Làm thế nào để có thể dùng tên mảng hai chiều a trong lời
-	gọi hàm.
-	Có hai cách:
-	* Cánh 1:
-	Dùng
-	đối con trỏ kiểu float, khai báo theo một trong hai mẫu
-	sau:
-	float (*pa)[30];
-		float pa[][30];
-	Ðể truy nhập đến phần tử a[i][j] trong thân hàm, dùng:
-	pa[i][j] /*Với cách này hạn chế số cột của mảng hai
-	chiều*/
-	* Cánh 2:
-	Dùng hai
-	đối:
-	float *pa; /* biểu thị
-	địa chỉ đầu của mảng a*/
-	int N; /*biểu thị số cột của mảng a*/
-	Ðể truy nhập
-	đến phần tử
-	a[i][j]
-	t
-	rong thân hàm, dùng công thức:
-	*(pa+ i*N + j)
-	Theo cách này mảng hai chiều
-	được qui về như mảng một chiều. Việc xử lý
-	phức 
-	tạp hơn so với cách nhưng không hạn chế số cột nên có thể
-	dùng cho bất kỳ mảng 
-	hai chiều nào.
-	Ví dụ:
+Giả sử a là mảng hai chiều:
+float a[50][30];
+Làm thế nào để có thể dùng tên mảng hai chiều a trong lời gọi hàm.
+Có hai cách:
+* Cánh 1:
+
+Dùng đối con trỏ kiểu float, khai báo theo một trong hai mẫu sau:
+float (*pa)[30];
+float pa[][30];
+
+Ðể truy nhập đến phần tử a[i][j] trong thân hàm, dùng:
+pa[i][j] /*Với cách này hạn chế số cột của mảng hai chiều*/
+
+* Cánh 2:
+Dùng hai đối:
+float *pa; /* biểu thị địa chỉ đầu của mảng a*/
+int N; /*biểu thị số cột của mảng a*/
+Ðể truy nhập đến phần tử a[i][j] trong thân hàm, dùng công thức:
+*(pa+ i*N + j)
+
+Theo cách này mảng hai chiềuđược qui về như mảng một chiều. Việc xử lý phức tạp hơn so với cách nhưng không hạn chế số cột nên có thể dùng cho bất kỳ mảng hai chiều nào.
+
+Ví dụ:
+
 	```
 	#include <stdio.h>
 	int cong_cot(int pa[][3]);
@@ -346,10 +313,8 @@
 <a name="41"></a>
 ##### 4.1 Khai báo
 
-	Trong một chương trình nếu chúng ta có sử dụng chuỗi ký tự, thì máy sẽ cung cấp một vùng nhớ cho một mảng kiểu char
-	đủ lớn để lưu các ký tự của chuỗi ký tự này và ký tự \0 ở cuối. Khi
-	đó bản thân chuỗi ký tự này là một hằng địa chỉ. Nó chứa địa chỉ đầu của mảng lưu trữ nó.
-	Ví dụ:
+Trong một chương trình nếu chúng ta có sử dụng chuỗi ký tự, thì máy sẽ cung cấp một vùng nhớ cho một mảng kiểu char đủ lớn để lưu các ký tự của chuỗi ký tự này và ký tự \0 ở cuối. Khi đó bản thân chuỗi ký tự này là một hằng địa chỉ. Nó chứa địa chỉ đầu của mảng lưu trữ nó.
+Ví dụ:
 	
 	```
 	#include <stdio.h>
@@ -372,10 +337,11 @@
 <a name=42></a>
 ##### 4.2 Hàm và chuỗi ký tự
 
-	Nếu tham số thực là tên chuỗi ký tự chuoi[20], đối ten_chuoi của hàm được khai báo theo hai mẫu:
-	`char ten_chuoi[] hoặc char *ten_chuoi`
+Nếu tham số thực là tên chuỗi ký tự chuoi[20], đối ten_chuoi của hàm được khai báo theo hai mẫu:
+
+`char ten_chuoi[] hoặc char *ten_chuoi`
 	
-	Ví dụ:
+Ví dụ:
 	
 	```
 	#include <stdio.h>
@@ -402,11 +368,13 @@
 
 <a name=51></a>
 ##### 5.1 Mảng các con trỏ
-	Khai báo mảng con trỏ
+Khai báo mảng con trỏ
+	
 	```
 	type *pointer_array[size];
 	```
-	ví dụ:
+	
+ví dụ:
 	
 	```
 	#include <stdio.h>
@@ -465,9 +433,9 @@
 
 <a name=52></a>
 ##### 5.2 Con trỏ chỉ đến con trỏ
-	Khai bao: `type **ptr_ptr;`
+Khai bao: `type **ptr_ptr;`
 	
-	Ví dụ:
+Ví dụ:
 	
 	```
 	char *monthname[20] =
