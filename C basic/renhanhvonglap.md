@@ -23,27 +23,30 @@
 #####1.1 Cấu trúc if và if else
 
 **Cấu trúc if**
-	 ````if(<Biểu thức luân lý>){
+
+```
+	 if(<Biểu thức luân lý>){
 	 <khối lệnh>;
 	 }
-	 ````
+```
 	
 **Cấu trúc if else**
 
-	````if(<Biểu thức luân lý>){
+```
+	if(<Biểu thức luân lý>){
 	<khối lệnh 1>;
 	}
 		else {
 		<Khối lệnh 2>
 	}
-	````
+```
 
 <a name="12"></a>
 #####1.2 Switch và switch default
 
 **Switch case**
 
-````switch(<Biểu thức>){
+```switch(<Biểu thức>){
 		case <Giá trị 1>;
 			<Lệnh 1>;
 			break;
@@ -54,11 +57,11 @@
 			<Lệnh n>
 			break;
 	}
-````
+```
 
 **Switch default**
 
-````switch(<Biểu thức>){
+```switch(<Biểu thức>){
 		case <Giá trị 1>;
 			<Lệnh 1>;
 			break;
@@ -70,7 +73,7 @@
 			break;
 	defaul <Lệnh>;
 	}
-````
+```
 
 <a name="13"></a>
 #####1.3 Cấu trúc lặp không điều kiện
@@ -98,10 +101,12 @@ goto nhãn;
  
 <a name="21"></a>
 #####2.1 Lệnh for
-	````for(<Biểu thức 1>; <Biểu thức 2>; <Biểu thức 3>){
+
+```
+	for(<Biểu thức 1>; <Biểu thức 2>; <Biểu thức 3>){
 	<khối lệnh>;
 	}
-	````
+```
 
 >*Lưu ý*
 >- Biểu thức 1 bao giờ cũng chỉ được tính toán một lần khi gọi thực hiện for.
@@ -125,7 +130,8 @@ goto nhãn;
 >- Trong thân for có thể sử dụng lệnh continue để chuyển đến đầu vòng lặp (bỏ qua các câu lệnh còn lại trong thân).
  
 **Ví dụ**
-	```` #include <stdio.h>
+
+``` #include <stdio.h>
 	int i = 0;
 	void main(){
 	int  = 0;
@@ -137,7 +143,8 @@ goto nhãn;
 	}
 	}
 	}
-	````
+```
+	
 > Kết quả
 	0 1 2 3 4 5 6 7 8 9
 
@@ -145,15 +152,17 @@ goto nhãn;
 <a name="22"></a>
 #####2.2 Lệnh while
 
-	````while(<Điều kiện>){
+```
+	while(<Điều kiện>){
 	<Khối lệnh>
 	}
-	````
+```
 
 **Ví dụ:**
 
-	````#include <stdio.h>
-		#define PASS "cmmr" 
+```
+	#include <stdio.h>
+	#define PASS "cmmr" 
 	int main(){
     char pass[100];
     /* Ham strcmp  tra ve ket qua la 0 khi 2 chuoi bang nhau  */
@@ -164,12 +173,13 @@ goto nhãn;
     printf("Mat khau dung");
     return 0;
 }
-	````
+```
 	
 <a name="23"></a>
 #####2.3 Lệnh do while
 
-	````do{
+```
+	do{
 			<khối lệnh>;
 	}while(Điều kiện);
 	````
@@ -185,11 +195,17 @@ int main (){
    }while( a < 15 );
    return 0;
 }
-	````
-	>Kết quả
-	Gia tri cua a la: 10
-	Gia tri cua a la: 11
-	Gia tri cua a la: 12
-	Gia tri cua a la: 13
-	Gia tri cua a la: 14
+```
+	
+Kết quả
+
+Gia tri cua a la: 10
+
+Gia tri cua a la: 11
+
+Gia tri cua a la: 12
+
+Gia tri cua a la: 13
+
+Gia tri cua a la: 14
 	
