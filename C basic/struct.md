@@ -18,10 +18,10 @@
 
 ---
 
-</a name="1"></a>
+<a name="1"></a>
 ### 1. KIỂU ENUM
 
-</a name="11"></a>
+<a name="11"></a>
 ##### 1.1. Cú pháp
 
 ```
@@ -31,7 +31,7 @@ enum {<Phần tử 1>,<Phần tử 2>,...} <Tên biến 1>,<Tên biến 2>,..;
 enum {<Phần tử 1>,<Phần tử 2>,...};
 ```
 
-</a name="12"></a>
+<a name="12"></a>
 ##### 1.2 Ví dụ
 
 ```
@@ -39,12 +39,12 @@ enum weekday{SUNDAY,MONDAY,TUESDAY,WEDSDAY,THURSDAY,FRIDAY,SATURDAY} day;
 
 ```
 
-</a name="2"></a>
+<a name="2"></a>
 ### 2. Struct
 
 Cấu trúc là một kiểu dữ liệu bao gồm nhiều thành phần có thể thuộc nhiều kiểu dữ liệu khác nhau. Các thành phần được truy nhập thông qua tênn. Khái niệm cấu trúc trong C có nhiều nét tương tự như khái niệm về bản ghi (record) trong PASCAL hay trong FOXPRO.
 
-</a name="21"></a>
+<a name="21"></a>
 ##### 2.1 Khai báo
 
 ```
@@ -53,7 +53,7 @@ Struct <Tên câu trúc> {
 } <danh sánh các biến thuộc cấu trúc>;
 ```
 
-</a name="22"></a>
+<a name="22"></a>
 ##### 2.2 Khai báo typedef
 
 ```
@@ -75,7 +75,7 @@ typedef struct hoc_sinh{
 }t_hoc_sinh,*ptr_hoc_sinh;
 
 ```
-</a name="23"></a>
+<a name="23"></a>
 ##### 2.3 Truy nhập đến các thành phần của cấu trúc
 
 - Nguyên tắc chung
@@ -91,7 +91,7 @@ Không nên sử dụng toán tử  & đối với các thành phần cấu trú
 đơn ví dụ hs có thể sử dụng #define để rút gọn "đường truy nhập"
 đến các thành phần cấu trúc.
 
-</a name="24"></a>
+<a name="24"></a>
 ##### 2.4 Con trỏ cấu trúc
 
 - Cách khai báo
@@ -130,7 +130,7 @@ cấu trúc đó từ một hàm khác. Trong những trường hợp đó, nên
 địa chỉ của cấu trúc đó cho hàm. Một ứng dụng khác của con trỏ cấu trúc mà chúng ta sẽ đề cập đến trong các phần sau là việc xây dựng các cấu trúc tự trỏ như: danh sách liên kết (còn gọi là danh 
 sách móc nối).
 
-</a name="25"></a>
+<a name="25"></a>
 ##### 2.5 Thành phần kiểu FIELD (nhóm bit)
 
 - Khai báo
@@ -175,7 +175,7 @@ int t: 2; /*0:mm-dd*/
 
 
 
-</a name="26"></a>
+<a name="26"></a>
 ##### 2.6 Mảng các cấu trúc
 
 - Khai báo
