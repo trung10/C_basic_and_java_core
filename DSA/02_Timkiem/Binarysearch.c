@@ -1,7 +1,9 @@
 /*
 * Thuật toán tìm kiếm phần tử trong một dãy đã được sắp xếp
-* Ưu điểm: Nhanh hơn linear search
-* Phải sắp xếp dãy trước khi tìm kiếm
+* Ưu điểm: 
+	Nhanh hơn linear search
+	c	dàng
+* Nhược điểm: Phải sắp xếp dãy trước khi tìm kiếm
 */
 
 #include <stdio.h>
