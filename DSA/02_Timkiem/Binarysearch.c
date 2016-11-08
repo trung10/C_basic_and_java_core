@@ -2,7 +2,7 @@
 * Thuật toán tìm kiếm phần tử trong một dãy đã được sắp xếp
 * Ưu điểm: 
 	Nhanh hơn linear search
-	C
+	Dễ nắm bắt, code đơn giản
 * Nhược điểm: Phải sắp xếp dãy trước khi tìm kiếm
 */
 
