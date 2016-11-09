@@ -1,3 +1,12 @@
+/*
+* Ưu điểm:
+- Xét duyệt tất cả các đỉnh để trả về kết quả.
+- Nếu số đỉnh là hữu hạn, thuật toán chắc chắn tìm ra kết quả.
+* Nhược điểm
+- Mang tính chất vét cạn, không nên áp dụng nếu duyệt số đỉnh quá lớn.
+- Mang tính chất mù quáng, duyệt tất cả đỉnh, không chú ý đến thông tin trong các đỉnh để duyệt hiệu quả, 
+dẫn đến duyệt qua các đỉnh không cần thiết.
+*/
 #include <stdio.h>
 #include <conio.h>
 #define max 100
