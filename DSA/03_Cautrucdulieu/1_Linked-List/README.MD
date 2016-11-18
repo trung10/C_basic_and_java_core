@@ -14,3 +14,11 @@
 
 * Chính vì lí do trên mà một số phép tính như tìm phần tử cuối cùng, xóa phần tử ngẫu nhiên hay chèn thêm, tìm kiếm có thể phải duyệt tất cả các phần tử.
 
+### Ứng dụng
+
+* Sử dụng danh sách liên kết xây dựng Stack và Queue;
+* Biểu diễn cây, đồ thị bằng danh sách liên kết;
+* Biểu diễn ma trận thưa bằng danh sách liên kết;
+* Bài toán đa thức sử dụng danh sách liên kết;
+* Bài toán số lớn sử dụng danh sách liên kết;
+* Xây dựng bảng b
