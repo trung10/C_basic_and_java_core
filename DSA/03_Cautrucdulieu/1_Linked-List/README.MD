@@ -21,4 +21,4 @@
 * Biểu diễn ma trận thưa bằng danh sách liên kết;
 * Bài toán đa thức sử dụng danh sách liên kết;
 * Bài toán số lớn sử dụng danh sách liên kết;
-* Xây dựng bảng b
+* Xây dựng bảng hash table
