@@ -8,23 +8,23 @@
 ##### 04. VCT fibonacci
 ##### 05. VCT tính tổng 1 dãy số nhập từ bàn phím
 ##### 06. VCT in ra các số lẻ , chẵn của 1 dãy số
-##### 22. Định thức cho ma trận 2 3 4
-##### 23. Viết chương trình tính tổng của n số đầu tiên của dãy số sau:
+##### 07. Định thức cho ma trận 2 3 4
+##### 08. Viết chương trình tính tổng của n số đầu tiên của dãy số sau:
 
 ```
 1+1/2+1/3+1/4+....+1/n.
 ```
 
-##### 24. Viết chương trình in ra bản cửu chương trên màn hình.
-##### 25. Viết chương trình nhập vào 2 mảng sắp xếp hai mảng đó thành tăng dần trên cùng 1 mảng ( gộp mảng)
-##### 26. Nhập một dãy số tìm một GTLN GTNN của dãy số đó
-##### 27. Sắp xếp dãy số 
-##### 28. Nghịch đảo ma trận
-##### 29. Nhập vào mảng sắp xếp các số âm dương trên hai mảng khác nhau
-##### 30. TRộn 2 dãy
-##### 31. Xóa phần tử bằng k trong mảng
-##### 32. Ứng dụng xóa phần tử âm trong mảng và sắp xếp
-##### 33. Tam giác pascal tính fn
+##### 09. Viết chương trình in ra bản cửu chương trên màn hình.
+##### 10. Viết chương trình nhập vào 2 mảng sắp xếp hai mảng đó thành tăng dần trên cùng 1 mảng ( gộp mảng)
+##### 11. Nhập một dãy số tìm một GTLN GTNN của dãy số đó
+##### 12. Sắp xếp dãy số 
+##### 13. Nghịch đảo ma trận
+##### 14. Nhập vào mảng sắp xếp các số âm dương trên hai mảng khác nhau
+##### 15. TRộn 2 dãy
+##### 16. Xóa phần tử bằng k trong mảng
+##### 17. Ứng dụng xóa phần tử âm trong mảng và sắp xếp
+##### 18. Tam giác pascal tính fn
 ##### 19. Viêt chương trình in ra số chia hết cho k từ 1 đến n 
 ##### 20. Viết chương trình đếm có bao nhiêu số nguyên tố từ 1 đến n 
 ##### 21. Viết chương trình đếm có bao nhiêu số chẵn từ 1 đến n
