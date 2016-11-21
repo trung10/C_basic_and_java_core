@@ -26,3 +26,14 @@ int ckn(int k, int n){
     }
     return giaithua(n)/(giaithua(k)*giaithua(n-k));
 }
+//Code kiem tra so nguyen to dung de quy
+int IsPrimenumber(int n, int i=2){
+  if(i == n)
+      return 1;
+  else
+      if(i < sqrt(n))
+          if(n % i)
+            IsPri(n, i+1);
+          else
+            return 0;
+}
