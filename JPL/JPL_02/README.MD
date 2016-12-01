@@ -61,8 +61,7 @@ double cel = fahr * 42.0 / (13.0 - 7.0);
 
 * break thoát khỏi vòng lặp, đặc biệt với bài toán tìm kiếm, thoát khỏi vòng lặp khi tìm thấy kết quả, tránh lặp tới tận cùng.
 
-* continue bỏ qua lặp nhảy đến vòng lặp tiếp theo. Bản chất là nhảy xuống vị trí kết thúc (});
-
+* continue bỏ qua lặp nhảy đến vòng lặp tiếp theo. Bản chất là nhảy xuống vị trí kết thúc (}).
 <a name = "3"></a>
 ## Arrays
 
