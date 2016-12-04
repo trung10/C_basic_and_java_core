@@ -135,8 +135,8 @@ david1 != david2
 
 * [] or .
 
-** Tuân theo các tham chiếu đến các đối tượng
-** Có thể sửa đổi các đối tượng, nhưng không bao giờ tham chiếu
+* Tuân theo các tham chiếu đến các đối tượng
+* Có thể sửa đổi các đối tượng, nhưng không bao giờ tham chiếu
 
 * Imagine
 
