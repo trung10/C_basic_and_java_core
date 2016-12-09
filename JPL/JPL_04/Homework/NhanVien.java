@@ -9,7 +9,13 @@ public class NhanVien {
 	private String sodt;
 	Scanner s = new Scanner(System.in);
 	
-	//public NhanVien() {
+	public NhanVien(int maMV, String hoten, String ngaysinh, String diachi, String sodt) {
+		this.maNV = maMV;
+		this.hoten = hoten;
+		this.ngaysinh = ngaysinh;
+		this.diachi = diachi;
+		this.sodt = sodt;
+	}
 	public void nhap(){
 		// TODO Auto-generated constructor stub
 		System.out.println("Nhap ma NV, ho ten, ngay sinh, dia chi, so dien thoai");
