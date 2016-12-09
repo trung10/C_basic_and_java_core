@@ -1,6 +1,6 @@
 ## Mục lục
 
-##### [Acces Control](#1)
+##### [Access Control](#1)
 
 ##### [Class Scope](#2)
 
@@ -50,6 +50,6 @@
 
 * Mục đích chính của một API là truy xuất đến tập các method hay dùng hay nói cách khác API chứa những hàm dựng sẵn để sử dụng khi lập trình. API thường là một phần của bộ SDK. Tránh tạo thêm.
 
-* [the API specification for version 6](http://docs.oracle.com/javase/6/docs/api/)
+* [The API specification for version 6](http://docs.oracle.com/javase/6/docs/api/)
 
 
