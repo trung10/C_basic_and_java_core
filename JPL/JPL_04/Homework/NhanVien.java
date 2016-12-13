@@ -19,11 +19,11 @@ public class NhanVien {
 	public void nhap(){
 		// TODO Auto-generated constructor stub
 		System.out.println("Nhap ma NV, ho ten, ngay sinh, dia chi, so dien thoai");
-		this.maNV = Integer.parseInt(s.nextLine());
-		this.hoten = s.nextLine();
-		this.ngaysinh = s.nextLine();
-		this.diachi = s.nextLine();
-		this.sodt = s.nextLine();
+		setmaNV(Integer.parseInt(s.nextLine()));
+		sethoten(s.nextLine());
+		setngaysinh(s.nextLine());
+		setdiachi(s.nextLine());
+		setngaysinh(s.nextLine());
 	}
 	
 	public void setmaNV(int maNV) {
@@ -43,7 +43,7 @@ public class NhanVien {
 		return this.hoten;
 	}
 	
-	public void getngaysinh(String ngaysinh){
+	public void setngaysinh(String ngaysinh){
 		this.ngaysinh = ngaysinh;
 	}
 	
@@ -70,7 +70,7 @@ public class NhanVien {
 	
 	public void xuat(){
 		System.out.println("MaNV\tTen\tNgaysinh\tDiachi\tSodt");
-		System.out.println(this.maNV + "\t" + this.hoten + "\t" + this.ngaysinh + "\t" + this.diachi + "\t" + this.sodt);
+		System.out.println(getmaNV() + "\t" + gethoten() + "\t" + getngaysinh() + "\t" + getdiachi() + "\t" + getsodt());
 	}
 	
 }
