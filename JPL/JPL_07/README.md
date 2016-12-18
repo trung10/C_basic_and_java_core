@@ -4,7 +4,7 @@
 
 ##### [Exceptions](#2)
 
-##### [IO](#3
+##### [IO](#3)
 
 <a name = "1"></a>
 ## Review
@@ -62,10 +62,9 @@
 * Debugging và hiểu sự kiểm soát hoạt động
 
 * Java không biết nó đang làm gì cho nên java
-
-*** Tạo một đối tượng Exception
-*** Bao gồm thông tin hữa ích
-*** "throws" the Exception
+* Tạo một đối tượng Exception
+* Bao gồm thông tin hữa ích
+* "throws" the Exception
 
 ##### public class Exception
 
